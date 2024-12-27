@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>人脸识别</title>
+</head>
+<body>
+    <h1>人脸识别系统</h1>
+
+    <h2>上传图片进行人脸识别</h2>
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        <input type="file" name="file" accept="image/*">
+        <button type="submit">上传图片</button>
+    </form>
+
+    <h2>打开摄像头实时识别人脸</h2>
+    <img src="/video_feed" width="640" height="480">
+
+</body>
+</html>

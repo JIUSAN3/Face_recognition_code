@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>人脸识别系统</title>
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f0f2f5;
+        }
+
+        .container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .tab-container {
+            display: flex;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #e8e8e8;
+        }
+
+        .tab {
+            padding: 10px 20px;
+            cursor: pointer;
+            margin-right: 10px;
+            border: none;
+            background: none;
+            font-size: 16px;
+        }
+
+        .tab.active {
+            color: #1890ff;
+            border-bottom: 2px solid #1890ff;
+            margin-bottom: -2px;
+        }
+
+        .content {
+            display: none;
+        }
+
+        .content.active {
+            display: block;
+        }
+
+        .video-container, .image-container {
+            position: relative;
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        video, #imagePreview {
+            max-width: 100%;
+            border-radius: 4px;
+        }
+            .video-container {
+        position: relative;
+        width: 640px;  /* 固定宽度 */
+        height: 480px; /* 固定高度 */
+        margin: 0 auto; /* 居中 */
+    }
+
+        #video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+        }
+
+        #videoCanvas {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 2;
+            pointer-events: none; /* 防止canvas interfere */
+        }
+        canvas {
+            position: absolute;
+            left: 0;
+            top: 0;
+            border-radius: 4px;
+        }
+
+        .controls {
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        button {
+            background-color: #1890ff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+            margin: 0 5px;
+        }
+
+        button:hover {
+            background-color: #40a9ff;
+        }
+
+        button:disabled {
+            background-color: #d9d9d9;
+            cursor: not-allowed;
+        }
+
+        .file-input {
+            display: none;
+        }
+
+        .file-label {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #1890ff;
+            color: white;
+            border-radius: 4px;
+            cursor: pointer;
+            margin: 10px 0;
+        }
+
+        .file-label:hover {
+            background-color: #40a9ff;
+        }
+
+        .results {
+            margin-top: 20px;
+            padding: 15px;
+            border: 1px solid #e8e8e8;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>人脸识别系统</h1>
+
+        <div class="tab-container">
+            <button class="tab active" onclick="switchTab('camera')">实时摄像头识别</button>
+            <button class="tab" onclick="switchTab('image')">图片识别</button>
+        </div>
+
+        <div id="camera" class="content active">
+            <div class="video-container">
+                <video id="video" width="640" height="480" autoplay></video>
+                <canvas id="videoCanvas"></canvas>
+            </div>
+            <div class="controls">
+                <button id="startCamera">开启摄像头</button>
+                <button id="stopCamera" disabled>关闭摄像头</button>
+            </div>
+            <div class="results" id="cameraResults"></div>
+        </div>
+
+        <div id="image" class="content">
+            <div class="controls">
+                <input type="file" id="imageInput" class="file-input" accept="image/*">
+                <label for="imageInput" class="file-label">选择图片</label>
+            </div>
+            <div class="image-container">
+                <img id="imagePreview" style="display: none;">
+                <canvas id="imageCanvas"></canvas>
+            </div>
+            <div class="results" id="imageResults"></div>
+        </div>
+        <div class="video-container">
+        <video id="video" autoplay playsinline></video>
+        <canvas id="videoCanvas"></canvas>
+</div>
+    </div>
+
+    <script>
+        const API_URL = 'http://localhost:5000/recognize-face';
+        let stream = null;
+        let isProcessing = false;
+
+        // 切换标签页
+        function switchTab(tabId) {
+            document.querySelectorAll('.tab').forEach(tab => tab.classList.remove('active'));
+            document.querySelectorAll('.content').forEach(content => content.classList.remove('active'));
+
+            event.target.classList.add('active');
+            document.getElementById(tabId).classList.add('active');
+
+            if (tabId === 'image' && stream) {
+                stopCamera();
+            }
+        }
+
+        // 摄像头控制
+        document.getElementById('startCamera').addEventListener('click', startCamera);
+        document.getElementById('stopCamera').addEventListener('click', stopCamera);
+
+        async function startCamera() {
+            try {
+                stream = await navigator.mediaDevices.getUserMedia({ video: true });
+                const video = document.getElementById('video');
+                video.srcObject = stream;
+                document.getElementById('startCamera').disabled = true;
+                document.getElementById('stopCamera').disabled = false;
+
+                // 设置canvas大小
+                const canvas = document.getElementById('videoCanvas');
+                canvas.width = video.width;
+                canvas.height = video.height;
+
+                // 开始处理视频帧
+                processVideo();
+            } catch (err) {
+                console.error('Error accessing camera:', err);
+                document.getElementById('cameraResults').innerHTML = '无法访问摄像头';
+            }
+        }
+
+        function stopCamera() {
+            if (stream) {
+                stream.getTracks().forEach(track => track.stop());
+                document.getElementById('video').srcObject = null;
+                document.getElementById('startCamera').disabled = false;
+                document.getElementById('stopCamera').disabled = true;
+                stream = null;
+            }
+        }
+
+        // 处理视频帧
+        async function processVideo() {
+            if (!stream) return;
+
+            const video = document.getElementById('video');
+            const canvas = document.getElementById('videoCanvas');
+            const ctx = canvas.getContext('2d');
+
+            // 清除之前的绘制 - 关键修改
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+            // 重新绘制当前视频帧
+            ctx.drawImage(video, 0, 0, canvas.width, canvas.height);
+
+
+            if (!isProcessing) {
+                isProcessing = true;
+                try {
+                    // 将canvas转换为blob
+                    const blob = await new Promise(resolve => canvas.toBlob(resolve, 'image/jpeg'));
+                    const formData = new FormData();
+                    formData.append('file', blob, 'frame.jpg');
+
+                    // 发送到服务器
+                    const response = await fetch(API_URL, {
+                        method: 'POST',
+                        body: formData
+                    });
+
+                    const result = await response.json();
+                    if (result.success) {
+                        drawResults(ctx, result.faces);
+                        updateResults('cameraResults', result.faces);
+                    }
+                } catch (err) {
+                    console.error('Error processing frame:', err);
+                } finally {
+                    isProcessing = false;
+                }
+            }
+
+            // 继续处理下一帧
+            requestAnimationFrame(processVideo);
+        }
+
+        // 图片处理
+        document.getElementById('imageInput').addEventListener('change', handleImageUpload);
+
+        function handleImageUpload(event) {
+            const file = event.target.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    const img = document.getElementById('imagePreview');
+                    img.src = e.target.result;
+                    img.style.display = 'block';
+
+                    img.onload = async function() {
+                        const canvas = document.getElementById('imageCanvas');
+                        canvas.width = img.width;
+                        canvas.height = img.height;
+
+                        // 处理图片
+                        await processImage(file);
+                    }
+                }
+                reader.readAsDataURL(file);
+            }
+        }
+
+        async function processImage(file) {
+            try {
+                const formData = new FormData();
+                formData.append('file', file);
+
+                const response = await fetch(API_URL, {
+                    method: 'POST',
+                    body: formData
+                });
+
+                const result = await response.json();
+                if (result.success) {
+                    const canvas = document.getElementById('imageCanvas');
+                    const ctx = canvas.getContext('2d');
+                    const img = document.getElementById('imagePreview');
+
+                    // 清除之前的绘制 - 关键修改
+                    ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+                    // 重新绘制原始图像
+                    ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+
+                    drawResults(ctx, result.faces);
+                    updateResults('imageResults', result.faces);
+                }
+            } catch (err) {
+                console.error('Error processing image:', err);
+                document.getElementById('imageResults').innerHTML = '处理图片时出错';
+            }
+        }
+
+        // 绘制结果
+        function drawResults(ctx, faces) {
+            faces.forEach(face => {
+                const [x, y, w, h] = face.bbox;
+
+                // 绘制边框
+                ctx.strokeStyle = '#00ff00';
+                ctx.lineWidth = 2;
+                ctx.strokeRect(x, y, w, h);
+
+                // 绘制标签
+                ctx.fillStyle = '#00ff00';
+                ctx.font = '16px Arial';
+                ctx.fillText(
+                    `${face.class} (${(face.confidence * 100).toFixed(1)}%)`,
+                    x, y - 5
+                );
+            });
+        }
+
+        // 更新结果显示
+        function updateResults(elementId, faces) {
+            const resultsDiv = document.getElementById(elementId);
+            resultsDiv.innerHTML = `
+                <h3>检测到 ${faces.length} 个人脸</h3>
+                ${faces.map(face => `
+                    <p>类别: ${face.class}, 置信度: ${(face.confidence * 100).toFixed(1)}%</p>
+                `).join('')}
+            `;
+        }
+    </script>
+</body>
+</html>
+
+
+

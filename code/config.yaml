@@ -1,0 +1,18 @@
+# 服务器配置
+server:
+  host: '0.0.0.0'
+  port: 5000
+  debug: false
+
+# 模型配置
+model_path: 'face_recognition_model.h5'
+
+# 类别配置
+categories:
+  - 'class_0'
+  - 'class_1'
+
+# 日志配置
+logging:
+  level: INFO
+  format: '%(asctime)s - %(levelname)s - %(message)s'

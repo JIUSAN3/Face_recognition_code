@@ -1,0 +1,434 @@
+2024-12-20 19:14:45,311 - INFO - Face cascade classifier loaded successfully
+2024-12-20 19:14:45,318 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.10.3:5000
+2024-12-20 19:14:45,318 - INFO - [33mPress CTRL+C to quit[0m
+2024-12-20 19:15:00,618 - WARNING - From C:\Users\Administrator\AppData\Local\Programs\Python\Python311\Lib\site-packages\keras\src\backend.py:1398: The name tf.executing_eagerly_outside_functions is deprecated. Please use tf.compat.v1.executing_eagerly_outside_functions instead.
+
+2024-12-20 19:15:00,692 - WARNING - From C:\Users\Administrator\AppData\Local\Programs\Python\Python311\Lib\site-packages\keras\src\layers\normalization\batch_normalization.py:979: The name tf.nn.fused_batch_norm is deprecated. Please use tf.compat.v1.nn.fused_batch_norm instead.
+
+2024-12-20 19:15:00,901 - INFO - Face recognition model loaded successfully
+2024-12-20 19:15:00,902 - INFO - Processed image with 0 faces detected in 0.77 seconds
+2024-12-20 19:15:00,903 - INFO - 127.0.0.1 - - [20/Dec/2024 19:15:00] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:15:01,377 - INFO - Processed image with 1 faces detected in 0.45 seconds
+2024-12-20 19:15:01,377 - INFO - 127.0.0.1 - - [20/Dec/2024 19:15:01] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:15:01,781 - INFO - Processed image with 1 faces detected in 0.07 seconds
+2024-12-20 19:15:01,782 - INFO - 127.0.0.1 - - [20/Dec/2024 19:15:01] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:15:02,043 - INFO - Processed image with 1 faces detected in 0.07 seconds
+2024-12-20 19:15:02,044 - INFO - 127.0.0.1 - - [20/Dec/2024 19:15:02] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:15:02,178 - INFO - Processed image with 1 faces detected in 0.07 seconds
+2024-12-20 19:15:02,178 - INFO - 127.0.0.1 - - [20/Dec/2024 19:15:02] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:15:02,442 - INFO - Processed image with 1 faces detected in 0.07 seconds
+2024-12-20 19:15:02,442 - INFO - 127.0.0.1 - - [20/Dec/2024 19:15:02] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:15:02,613 - INFO - Processed image with 2 faces detected in 0.12 seconds
+2024-12-20 19:15:02,614 - INFO - 127.0.0.1 - - [20/Dec/2024 19:15:02] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:15:02,848 - INFO - Processed image with 1 faces detected in 0.07 seconds
+2024-12-20 19:15:02,848 - INFO - 127.0.0.1 - - [20/Dec/2024 19:15:02] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:15:02,962 - INFO - Processed image with 0 faces detected in 0.02 seconds
+2024-12-20 19:15:02,963 - INFO - 127.0.0.1 - - [20/Dec/2024 19:15:02] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:15:03,192 - INFO - Processed image with 0 faces detected in 0.02 seconds
+2024-12-20 19:15:03,192 - INFO - 127.0.0.1 - - [20/Dec/2024 19:15:03] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:15:03,317 - INFO - Processed image with 0 faces detected in 0.02 seconds
+2024-12-20 19:15:03,317 - INFO - 127.0.0.1 - - [20/Dec/2024 19:15:03] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:15:03,533 - INFO - Processed image with 0 faces detected in 0.02 seconds
+2024-12-20 19:15:03,533 - INFO - 127.0.0.1 - - [20/Dec/2024 19:15:03] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:15:03,656 - INFO - Processed image with 0 faces detected in 0.02 seconds
+2024-12-20 19:15:03,656 - INFO - 127.0.0.1 - - [20/Dec/2024 19:15:03] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:15:03,922 - INFO - Processed image with 1 faces detected in 0.07 seconds
+2024-12-20 19:15:03,923 - INFO - 127.0.0.1 - - [20/Dec/2024 19:15:03] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:15:03,993 - INFO - Processed image with 0 faces detected in 0.02 seconds
+2024-12-20 19:15:03,994 - INFO - 127.0.0.1 - - [20/Dec/2024 19:15:03] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:15:04,323 - INFO - Processed image with 1 faces detected in 0.07 seconds
+2024-12-20 19:15:04,323 - INFO - 127.0.0.1 - - [20/Dec/2024 19:15:04] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:15:04,409 - INFO - Processed image with 1 faces detected in 0.07 seconds
+2024-12-20 19:15:04,409 - INFO - 127.0.0.1 - - [20/Dec/2024 19:15:04] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:15:04,752 - INFO - Processed image with 0 faces detected in 0.02 seconds
+2024-12-20 19:15:04,752 - INFO - 127.0.0.1 - - [20/Dec/2024 19:15:04] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:15:05,065 - INFO - Processed image with 1 faces detected in 0.07 seconds
+2024-12-20 19:15:05,066 - INFO - 127.0.0.1 - - [20/Dec/2024 19:15:05] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:15:05,155 - INFO - Processed image with 1 faces detected in 0.07 seconds
+2024-12-20 19:15:05,156 - INFO - 127.0.0.1 - - [20/Dec/2024 19:15:05] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:15:05,544 - INFO - Processed image with 1 faces detected in 0.07 seconds
+2024-12-20 19:15:05,545 - INFO - 127.0.0.1 - - [20/Dec/2024 19:15:05] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:15:05,812 - INFO - Processed image with 1 faces detected in 0.08 seconds
+2024-12-20 19:15:05,812 - INFO - 127.0.0.1 - - [20/Dec/2024 19:15:05] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:15:05,949 - INFO - Processed image with 1 faces detected in 0.07 seconds
+2024-12-20 19:15:05,950 - INFO - 127.0.0.1 - - [20/Dec/2024 19:15:05] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:15:06,204 - INFO - Processed image with 1 faces detected in 0.07 seconds
+2024-12-20 19:15:06,205 - INFO - 127.0.0.1 - - [20/Dec/2024 19:15:06] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:15:06,346 - INFO - Processed image with 1 faces detected in 0.07 seconds
+2024-12-20 19:15:06,347 - INFO - 127.0.0.1 - - [20/Dec/2024 19:15:06] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:15:06,592 - INFO - Processed image with 1 faces detected in 0.07 seconds
+2024-12-20 19:15:06,592 - INFO - 127.0.0.1 - - [20/Dec/2024 19:15:06] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:15:06,734 - INFO - Processed image with 1 faces detected in 0.07 seconds
+2024-12-20 19:15:06,734 - INFO - 127.0.0.1 - - [20/Dec/2024 19:15:06] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:15:06,982 - INFO - Processed image with 1 faces detected in 0.07 seconds
+2024-12-20 19:15:06,983 - INFO - 127.0.0.1 - - [20/Dec/2024 19:15:06] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:15:07,134 - INFO - Processed image with 1 faces detected in 0.07 seconds
+2024-12-20 19:15:07,134 - INFO - 127.0.0.1 - - [20/Dec/2024 19:15:07] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:15:07,381 - INFO - Processed image with 1 faces detected in 0.07 seconds
+2024-12-20 19:15:07,381 - INFO - 127.0.0.1 - - [20/Dec/2024 19:15:07] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:15:07,521 - INFO - Processed image with 1 faces detected in 0.07 seconds
+2024-12-20 19:15:07,521 - INFO - 127.0.0.1 - - [20/Dec/2024 19:15:07] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:15:07,796 - INFO - Processed image with 1 faces detected in 0.08 seconds
+2024-12-20 19:15:07,796 - INFO - 127.0.0.1 - - [20/Dec/2024 19:15:07] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:15:07,925 - INFO - Processed image with 1 faces detected in 0.08 seconds
+2024-12-20 19:15:07,925 - INFO - 127.0.0.1 - - [20/Dec/2024 19:15:07] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:15:08,134 - INFO - Processed image with 0 faces detected in 0.02 seconds
+2024-12-20 19:15:08,134 - INFO - 127.0.0.1 - - [20/Dec/2024 19:15:08] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:15:08,318 - INFO - Processed image with 1 faces detected in 0.08 seconds
+2024-12-20 19:15:08,319 - INFO - 127.0.0.1 - - [20/Dec/2024 19:15:08] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:15:08,474 - INFO - Processed image with 0 faces detected in 0.02 seconds
+2024-12-20 19:15:08,475 - INFO - 127.0.0.1 - - [20/Dec/2024 19:15:08] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:15:08,713 - INFO - Processed image with 1 faces detected in 0.07 seconds
+2024-12-20 19:15:08,713 - INFO - 127.0.0.1 - - [20/Dec/2024 19:15:08] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:15:08,873 - INFO - Processed image with 1 faces detected in 0.07 seconds
+2024-12-20 19:15:08,873 - INFO - 127.0.0.1 - - [20/Dec/2024 19:15:08] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:15:09,103 - INFO - Processed image with 1 faces detected in 0.07 seconds
+2024-12-20 19:15:09,104 - INFO - 127.0.0.1 - - [20/Dec/2024 19:15:09] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:15:09,280 - INFO - Processed image with 1 faces detected in 0.09 seconds
+2024-12-20 19:15:09,280 - INFO - 127.0.0.1 - - [20/Dec/2024 19:15:09] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:15:09,453 - INFO - Processed image with 0 faces detected in 0.02 seconds
+2024-12-20 19:15:09,453 - INFO - 127.0.0.1 - - [20/Dec/2024 19:15:09] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:15:09,718 - INFO - Processed image with 2 faces detected in 0.12 seconds
+2024-12-20 19:15:09,718 - INFO - 127.0.0.1 - - [20/Dec/2024 19:15:09] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:15:09,791 - INFO - Processed image with 0 faces detected in 0.02 seconds
+2024-12-20 19:15:09,792 - INFO - 127.0.0.1 - - [20/Dec/2024 19:15:09] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:18:22,850 - INFO - Face cascade classifier loaded successfully
+2024-12-20 19:18:22,858 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.10.3:5000
+2024-12-20 19:18:22,858 - INFO - [33mPress CTRL+C to quit[0m
+2024-12-20 19:25:27,068 - WARNING - From C:\Users\Administrator\AppData\Local\Programs\Python\Python311\Lib\site-packages\keras\src\backend.py:1398: The name tf.executing_eagerly_outside_functions is deprecated. Please use tf.compat.v1.executing_eagerly_outside_functions instead.
+
+2024-12-20 19:25:27,113 - WARNING - From C:\Users\Administrator\AppData\Local\Programs\Python\Python311\Lib\site-packages\keras\src\layers\normalization\batch_normalization.py:979: The name tf.nn.fused_batch_norm is deprecated. Please use tf.compat.v1.nn.fused_batch_norm instead.
+
+2024-12-20 19:25:27,282 - INFO - Face recognition model loaded successfully
+2024-12-20 19:25:27,282 - INFO - Processed image with 0 faces detected in 0.46 seconds
+2024-12-20 19:25:27,283 - INFO - 127.0.0.1 - - [20/Dec/2024 19:25:27] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:25:27,485 - INFO - Processed image with 1 faces detected in 0.18 seconds
+2024-12-20 19:25:27,486 - INFO - 127.0.0.1 - - [20/Dec/2024 19:25:27] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:25:27,881 - INFO - Processed image with 1 faces detected in 0.07 seconds
+2024-12-20 19:25:27,882 - INFO - 127.0.0.1 - - [20/Dec/2024 19:25:27] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:25:28,131 - INFO - Processed image with 1 faces detected in 0.08 seconds
+2024-12-20 19:25:28,132 - INFO - 127.0.0.1 - - [20/Dec/2024 19:25:28] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:25:28,288 - INFO - Processed image with 1 faces detected in 0.08 seconds
+2024-12-20 19:25:28,288 - INFO - 127.0.0.1 - - [20/Dec/2024 19:25:28] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:25:28,531 - INFO - Processed image with 1 faces detected in 0.07 seconds
+2024-12-20 19:25:28,532 - INFO - 127.0.0.1 - - [20/Dec/2024 19:25:28] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:25:28,681 - INFO - Processed image with 1 faces detected in 0.08 seconds
+2024-12-20 19:25:28,682 - INFO - 127.0.0.1 - - [20/Dec/2024 19:25:28] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:25:28,923 - INFO - Processed image with 1 faces detected in 0.07 seconds
+2024-12-20 19:25:28,924 - INFO - 127.0.0.1 - - [20/Dec/2024 19:25:28] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:25:29,080 - INFO - Processed image with 1 faces detected in 0.07 seconds
+2024-12-20 19:25:29,080 - INFO - 127.0.0.1 - - [20/Dec/2024 19:25:29] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:25:29,316 - INFO - Processed image with 1 faces detected in 0.07 seconds
+2024-12-20 19:25:29,316 - INFO - 127.0.0.1 - - [20/Dec/2024 19:25:29] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:25:29,491 - INFO - Processed image with 1 faces detected in 0.08 seconds
+2024-12-20 19:25:29,492 - INFO - 127.0.0.1 - - [20/Dec/2024 19:25:29] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:25:29,715 - INFO - Processed image with 1 faces detected in 0.07 seconds
+2024-12-20 19:25:29,715 - INFO - 127.0.0.1 - - [20/Dec/2024 19:25:29] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:25:29,897 - INFO - Processed image with 1 faces detected in 0.07 seconds
+2024-12-20 19:25:29,897 - INFO - 127.0.0.1 - - [20/Dec/2024 19:25:29] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:25:30,114 - INFO - Processed image with 1 faces detected in 0.07 seconds
+2024-12-20 19:25:30,114 - INFO - 127.0.0.1 - - [20/Dec/2024 19:25:30] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:25:30,306 - INFO - Processed image with 1 faces detected in 0.08 seconds
+2024-12-20 19:25:30,306 - INFO - 127.0.0.1 - - [20/Dec/2024 19:25:30] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:25:30,518 - INFO - Processed image with 1 faces detected in 0.07 seconds
+2024-12-20 19:25:30,518 - INFO - 127.0.0.1 - - [20/Dec/2024 19:25:30] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:25:30,709 - INFO - Processed image with 1 faces detected in 0.08 seconds
+2024-12-20 19:25:30,710 - INFO - 127.0.0.1 - - [20/Dec/2024 19:25:30] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:25:30,920 - INFO - Processed image with 1 faces detected in 0.07 seconds
+2024-12-20 19:25:30,920 - INFO - 127.0.0.1 - - [20/Dec/2024 19:25:30] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:25:31,104 - INFO - Processed image with 1 faces detected in 0.07 seconds
+2024-12-20 19:25:31,104 - INFO - 127.0.0.1 - - [20/Dec/2024 19:25:31] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:25:31,317 - INFO - Processed image with 1 faces detected in 0.08 seconds
+2024-12-20 19:25:31,317 - INFO - 127.0.0.1 - - [20/Dec/2024 19:25:31] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:25:31,498 - INFO - Processed image with 1 faces detected in 0.08 seconds
+2024-12-20 19:25:31,499 - INFO - 127.0.0.1 - - [20/Dec/2024 19:25:31] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:25:31,729 - INFO - Processed image with 1 faces detected in 0.08 seconds
+2024-12-20 19:25:31,729 - INFO - 127.0.0.1 - - [20/Dec/2024 19:25:31] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:25:31,908 - INFO - Processed image with 1 faces detected in 0.08 seconds
+2024-12-20 19:25:31,909 - INFO - 127.0.0.1 - - [20/Dec/2024 19:25:31] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:25:32,130 - INFO - Processed image with 1 faces detected in 0.07 seconds
+2024-12-20 19:25:32,130 - INFO - 127.0.0.1 - - [20/Dec/2024 19:25:32] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:25:32,312 - INFO - Processed image with 1 faces detected in 0.08 seconds
+2024-12-20 19:25:32,312 - INFO - 127.0.0.1 - - [20/Dec/2024 19:25:32] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:25:32,527 - INFO - Processed image with 1 faces detected in 0.07 seconds
+2024-12-20 19:25:32,527 - INFO - 127.0.0.1 - - [20/Dec/2024 19:25:32] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:25:32,717 - INFO - Processed image with 1 faces detected in 0.07 seconds
+2024-12-20 19:25:32,717 - INFO - 127.0.0.1 - - [20/Dec/2024 19:25:32] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:25:32,927 - INFO - Processed image with 1 faces detected in 0.07 seconds
+2024-12-20 19:25:32,928 - INFO - 127.0.0.1 - - [20/Dec/2024 19:25:32] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:25:33,115 - INFO - Processed image with 1 faces detected in 0.07 seconds
+2024-12-20 19:25:33,115 - INFO - 127.0.0.1 - - [20/Dec/2024 19:25:33] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:25:33,330 - INFO - Processed image with 1 faces detected in 0.07 seconds
+2024-12-20 19:25:33,331 - INFO - 127.0.0.1 - - [20/Dec/2024 19:25:33] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:25:33,516 - INFO - Processed image with 1 faces detected in 0.07 seconds
+2024-12-20 19:25:33,517 - INFO - 127.0.0.1 - - [20/Dec/2024 19:25:33] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:25:33,716 - INFO - Processed image with 1 faces detected in 0.07 seconds
+2024-12-20 19:25:33,717 - INFO - 127.0.0.1 - - [20/Dec/2024 19:25:33] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:25:33,901 - INFO - Processed image with 1 faces detected in 0.07 seconds
+2024-12-20 19:25:33,902 - INFO - 127.0.0.1 - - [20/Dec/2024 19:25:33] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:25:34,107 - INFO - Processed image with 1 faces detected in 0.07 seconds
+2024-12-20 19:25:34,107 - INFO - 127.0.0.1 - - [20/Dec/2024 19:25:34] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:25:34,292 - INFO - Processed image with 1 faces detected in 0.07 seconds
+2024-12-20 19:25:34,292 - INFO - 127.0.0.1 - - [20/Dec/2024 19:25:34] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:25:34,510 - INFO - Processed image with 1 faces detected in 0.07 seconds
+2024-12-20 19:25:34,510 - INFO - 127.0.0.1 - - [20/Dec/2024 19:25:34] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:25:34,695 - INFO - Processed image with 1 faces detected in 0.07 seconds
+2024-12-20 19:25:34,696 - INFO - 127.0.0.1 - - [20/Dec/2024 19:25:34] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:25:34,905 - INFO - Processed image with 1 faces detected in 0.07 seconds
+2024-12-20 19:25:34,906 - INFO - 127.0.0.1 - - [20/Dec/2024 19:25:34] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:25:35,091 - INFO - Processed image with 1 faces detected in 0.07 seconds
+2024-12-20 19:25:35,092 - INFO - 127.0.0.1 - - [20/Dec/2024 19:25:35] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:25:35,292 - INFO - Processed image with 1 faces detected in 0.07 seconds
+2024-12-20 19:25:35,292 - INFO - 127.0.0.1 - - [20/Dec/2024 19:25:35] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:25:35,478 - INFO - Processed image with 1 faces detected in 0.07 seconds
+2024-12-20 19:25:35,478 - INFO - 127.0.0.1 - - [20/Dec/2024 19:25:35] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:25:35,685 - INFO - Processed image with 1 faces detected in 0.07 seconds
+2024-12-20 19:25:35,685 - INFO - 127.0.0.1 - - [20/Dec/2024 19:25:35] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:25:35,879 - INFO - Processed image with 1 faces detected in 0.07 seconds
+2024-12-20 19:25:35,880 - INFO - 127.0.0.1 - - [20/Dec/2024 19:25:35] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:25:36,081 - INFO - Processed image with 1 faces detected in 0.07 seconds
+2024-12-20 19:25:36,082 - INFO - 127.0.0.1 - - [20/Dec/2024 19:25:36] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:25:36,266 - INFO - Processed image with 1 faces detected in 0.07 seconds
+2024-12-20 19:25:36,266 - INFO - 127.0.0.1 - - [20/Dec/2024 19:25:36] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:25:36,472 - INFO - Processed image with 1 faces detected in 0.07 seconds
+2024-12-20 19:25:36,472 - INFO - 127.0.0.1 - - [20/Dec/2024 19:25:36] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:25:36,669 - INFO - Processed image with 1 faces detected in 0.07 seconds
+2024-12-20 19:25:36,670 - INFO - 127.0.0.1 - - [20/Dec/2024 19:25:36] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:25:36,873 - INFO - Processed image with 1 faces detected in 0.07 seconds
+2024-12-20 19:25:36,873 - INFO - 127.0.0.1 - - [20/Dec/2024 19:25:36] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:25:37,057 - INFO - Processed image with 1 faces detected in 0.07 seconds
+2024-12-20 19:25:37,057 - INFO - 127.0.0.1 - - [20/Dec/2024 19:25:37] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:25:37,275 - INFO - Processed image with 1 faces detected in 0.07 seconds
+2024-12-20 19:25:37,275 - INFO - 127.0.0.1 - - [20/Dec/2024 19:25:37] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:25:37,444 - INFO - Processed image with 1 faces detected in 0.07 seconds
+2024-12-20 19:25:37,444 - INFO - 127.0.0.1 - - [20/Dec/2024 19:25:37] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:25:37,662 - INFO - Processed image with 1 faces detected in 0.07 seconds
+2024-12-20 19:25:37,663 - INFO - 127.0.0.1 - - [20/Dec/2024 19:25:37] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:25:37,832 - INFO - Processed image with 1 faces detected in 0.07 seconds
+2024-12-20 19:25:37,832 - INFO - 127.0.0.1 - - [20/Dec/2024 19:25:37] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:25:38,053 - INFO - Processed image with 1 faces detected in 0.08 seconds
+2024-12-20 19:25:38,053 - INFO - 127.0.0.1 - - [20/Dec/2024 19:25:38] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:25:38,214 - INFO - Processed image with 1 faces detected in 0.07 seconds
+2024-12-20 19:25:38,215 - INFO - 127.0.0.1 - - [20/Dec/2024 19:25:38] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:25:38,450 - INFO - Processed image with 1 faces detected in 0.07 seconds
+2024-12-20 19:25:38,451 - INFO - 127.0.0.1 - - [20/Dec/2024 19:25:38] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:25:38,604 - INFO - Processed image with 1 faces detected in 0.07 seconds
+2024-12-20 19:25:38,605 - INFO - 127.0.0.1 - - [20/Dec/2024 19:25:38] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:25:38,840 - INFO - Processed image with 1 faces detected in 0.07 seconds
+2024-12-20 19:25:38,841 - INFO - 127.0.0.1 - - [20/Dec/2024 19:25:38] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:25:38,988 - INFO - Processed image with 1 faces detected in 0.07 seconds
+2024-12-20 19:25:38,988 - INFO - 127.0.0.1 - - [20/Dec/2024 19:25:38] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:25:39,238 - INFO - Processed image with 1 faces detected in 0.07 seconds
+2024-12-20 19:25:39,238 - INFO - 127.0.0.1 - - [20/Dec/2024 19:25:39] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:25:39,380 - INFO - Processed image with 1 faces detected in 0.07 seconds
+2024-12-20 19:25:39,381 - INFO - 127.0.0.1 - - [20/Dec/2024 19:25:39] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:25:39,624 - INFO - Processed image with 1 faces detected in 0.07 seconds
+2024-12-20 19:25:39,625 - INFO - 127.0.0.1 - - [20/Dec/2024 19:25:39] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:25:39,783 - INFO - Processed image with 1 faces detected in 0.07 seconds
+2024-12-20 19:25:39,783 - INFO - 127.0.0.1 - - [20/Dec/2024 19:25:39] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:25:40,024 - INFO - Processed image with 1 faces detected in 0.07 seconds
+2024-12-20 19:25:40,025 - INFO - 127.0.0.1 - - [20/Dec/2024 19:25:40] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:25:40,228 - INFO - Processed image with 2 faces detected in 0.12 seconds
+2024-12-20 19:25:40,229 - INFO - 127.0.0.1 - - [20/Dec/2024 19:25:40] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:25:40,479 - INFO - Processed image with 2 faces detected in 0.12 seconds
+2024-12-20 19:25:40,479 - INFO - 127.0.0.1 - - [20/Dec/2024 19:25:40] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:25:40,630 - INFO - Processed image with 1 faces detected in 0.07 seconds
+2024-12-20 19:25:40,630 - INFO - 127.0.0.1 - - [20/Dec/2024 19:25:40] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:25:40,873 - INFO - Processed image with 1 faces detected in 0.07 seconds
+2024-12-20 19:25:40,874 - INFO - 127.0.0.1 - - [20/Dec/2024 19:25:40] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:25:41,029 - INFO - Processed image with 1 faces detected in 0.07 seconds
+2024-12-20 19:25:41,029 - INFO - 127.0.0.1 - - [20/Dec/2024 19:25:41] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:25:41,267 - INFO - Processed image with 1 faces detected in 0.07 seconds
+2024-12-20 19:25:41,268 - INFO - 127.0.0.1 - - [20/Dec/2024 19:25:41] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:25:41,423 - INFO - Processed image with 1 faces detected in 0.08 seconds
+2024-12-20 19:25:41,424 - INFO - 127.0.0.1 - - [20/Dec/2024 19:25:41] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:25:41,667 - INFO - Processed image with 1 faces detected in 0.07 seconds
+2024-12-20 19:25:41,668 - INFO - 127.0.0.1 - - [20/Dec/2024 19:25:41] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:25:41,819 - INFO - Processed image with 1 faces detected in 0.07 seconds
+2024-12-20 19:25:41,820 - INFO - 127.0.0.1 - - [20/Dec/2024 19:25:41] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:25:42,070 - INFO - Processed image with 1 faces detected in 0.07 seconds
+2024-12-20 19:25:42,070 - INFO - 127.0.0.1 - - [20/Dec/2024 19:25:42] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:25:42,212 - INFO - Processed image with 1 faces detected in 0.08 seconds
+2024-12-20 19:25:42,213 - INFO - 127.0.0.1 - - [20/Dec/2024 19:25:42] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:25:42,466 - INFO - Processed image with 1 faces detected in 0.07 seconds
+2024-12-20 19:25:42,466 - INFO - 127.0.0.1 - - [20/Dec/2024 19:25:42] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:25:42,613 - INFO - Processed image with 1 faces detected in 0.08 seconds
+2024-12-20 19:25:42,614 - INFO - 127.0.0.1 - - [20/Dec/2024 19:25:42] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:25:42,866 - INFO - Processed image with 1 faces detected in 0.07 seconds
+2024-12-20 19:25:42,867 - INFO - 127.0.0.1 - - [20/Dec/2024 19:25:42] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:25:43,011 - INFO - Processed image with 1 faces detected in 0.07 seconds
+2024-12-20 19:25:43,011 - INFO - 127.0.0.1 - - [20/Dec/2024 19:25:43] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:25:43,254 - INFO - Processed image with 1 faces detected in 0.07 seconds
+2024-12-20 19:25:43,254 - INFO - 127.0.0.1 - - [20/Dec/2024 19:25:43] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:25:43,409 - INFO - Processed image with 1 faces detected in 0.07 seconds
+2024-12-20 19:25:43,410 - INFO - 127.0.0.1 - - [20/Dec/2024 19:25:43] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:25:43,659 - INFO - Processed image with 1 faces detected in 0.07 seconds
+2024-12-20 19:25:43,659 - INFO - 127.0.0.1 - - [20/Dec/2024 19:25:43] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:25:43,794 - INFO - Processed image with 1 faces detected in 0.07 seconds
+2024-12-20 19:25:43,794 - INFO - 127.0.0.1 - - [20/Dec/2024 19:25:43] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:25:44,044 - INFO - Processed image with 1 faces detected in 0.07 seconds
+2024-12-20 19:25:44,045 - INFO - 127.0.0.1 - - [20/Dec/2024 19:25:44] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:25:44,185 - INFO - Processed image with 1 faces detected in 0.07 seconds
+2024-12-20 19:25:44,185 - INFO - 127.0.0.1 - - [20/Dec/2024 19:25:44] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:25:44,428 - INFO - Processed image with 1 faces detected in 0.07 seconds
+2024-12-20 19:25:44,429 - INFO - 127.0.0.1 - - [20/Dec/2024 19:25:44] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:25:44,586 - INFO - Processed image with 1 faces detected in 0.07 seconds
+2024-12-20 19:25:44,587 - INFO - 127.0.0.1 - - [20/Dec/2024 19:25:44] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:25:44,834 - INFO - Processed image with 1 faces detected in 0.07 seconds
+2024-12-20 19:25:44,834 - INFO - 127.0.0.1 - - [20/Dec/2024 19:25:44] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:25:44,985 - INFO - Processed image with 1 faces detected in 0.07 seconds
+2024-12-20 19:25:44,986 - INFO - 127.0.0.1 - - [20/Dec/2024 19:25:44] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:25:45,218 - INFO - Processed image with 1 faces detected in 0.07 seconds
+2024-12-20 19:25:45,219 - INFO - 127.0.0.1 - - [20/Dec/2024 19:25:45] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:25:45,370 - INFO - Processed image with 1 faces detected in 0.07 seconds
+2024-12-20 19:25:45,371 - INFO - 127.0.0.1 - - [20/Dec/2024 19:25:45] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:25:45,617 - INFO - Processed image with 1 faces detected in 0.07 seconds
+2024-12-20 19:25:45,618 - INFO - 127.0.0.1 - - [20/Dec/2024 19:25:45] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:25:45,770 - INFO - Processed image with 1 faces detected in 0.07 seconds
+2024-12-20 19:25:45,770 - INFO - 127.0.0.1 - - [20/Dec/2024 19:25:45] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:25:46,017 - INFO - Processed image with 1 faces detected in 0.07 seconds
+2024-12-20 19:25:46,017 - INFO - 127.0.0.1 - - [20/Dec/2024 19:25:46] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:25:46,160 - INFO - Processed image with 1 faces detected in 0.07 seconds
+2024-12-20 19:25:46,160 - INFO - 127.0.0.1 - - [20/Dec/2024 19:25:46] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:25:46,419 - INFO - Processed image with 1 faces detected in 0.07 seconds
+2024-12-20 19:25:46,419 - INFO - 127.0.0.1 - - [20/Dec/2024 19:25:46] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:25:46,558 - INFO - Processed image with 1 faces detected in 0.07 seconds
+2024-12-20 19:25:46,559 - INFO - 127.0.0.1 - - [20/Dec/2024 19:25:46] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:25:46,819 - INFO - Processed image with 1 faces detected in 0.07 seconds
+2024-12-20 19:25:46,820 - INFO - 127.0.0.1 - - [20/Dec/2024 19:25:46] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:25:46,962 - INFO - Processed image with 1 faces detected in 0.07 seconds
+2024-12-20 19:25:46,963 - INFO - 127.0.0.1 - - [20/Dec/2024 19:25:46] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:25:47,154 - INFO - Processed image with 0 faces detected in 0.02 seconds
+2024-12-20 19:25:47,155 - INFO - 127.0.0.1 - - [20/Dec/2024 19:25:47] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:25:47,308 - INFO - Processed image with 0 faces detected in 0.02 seconds
+2024-12-20 19:25:47,308 - INFO - 127.0.0.1 - - [20/Dec/2024 19:25:47] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:25:47,493 - INFO - Processed image with 0 faces detected in 0.02 seconds
+2024-12-20 19:25:47,493 - INFO - 127.0.0.1 - - [20/Dec/2024 19:25:47] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:25:47,698 - INFO - Processed image with 1 faces detected in 0.07 seconds
+2024-12-20 19:25:47,698 - INFO - 127.0.0.1 - - [20/Dec/2024 19:25:47] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:25:47,831 - INFO - Processed image with 0 faces detected in 0.02 seconds
+2024-12-20 19:25:47,832 - INFO - 127.0.0.1 - - [20/Dec/2024 19:25:47] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:25:48,087 - INFO - Processed image with 1 faces detected in 0.07 seconds
+2024-12-20 19:25:48,087 - INFO - 127.0.0.1 - - [20/Dec/2024 19:25:48] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:25:48,168 - INFO - Processed image with 0 faces detected in 0.01 seconds
+2024-12-20 19:25:48,169 - INFO - 127.0.0.1 - - [20/Dec/2024 19:25:48] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:25:48,493 - INFO - Processed image with 1 faces detected in 0.08 seconds
+2024-12-20 19:25:48,494 - INFO - 127.0.0.1 - - [20/Dec/2024 19:25:48] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:25:48,579 - INFO - Processed image with 1 faces detected in 0.07 seconds
+2024-12-20 19:25:48,579 - INFO - 127.0.0.1 - - [20/Dec/2024 19:25:48] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:25:48,982 - INFO - Processed image with 1 faces detected in 0.07 seconds
+2024-12-20 19:25:48,982 - INFO - 127.0.0.1 - - [20/Dec/2024 19:25:48] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:25:49,246 - INFO - Processed image with 1 faces detected in 0.07 seconds
+2024-12-20 19:25:49,247 - INFO - 127.0.0.1 - - [20/Dec/2024 19:25:49] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:25:49,388 - INFO - Processed image with 1 faces detected in 0.08 seconds
+2024-12-20 19:25:49,388 - INFO - 127.0.0.1 - - [20/Dec/2024 19:25:49] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:25:49,646 - INFO - Processed image with 1 faces detected in 0.07 seconds
+2024-12-20 19:25:49,647 - INFO - 127.0.0.1 - - [20/Dec/2024 19:25:49] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:25:49,784 - INFO - Processed image with 1 faces detected in 0.07 seconds
+2024-12-20 19:25:49,785 - INFO - 127.0.0.1 - - [20/Dec/2024 19:25:49] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:25:50,045 - INFO - Processed image with 1 faces detected in 0.07 seconds
+2024-12-20 19:25:50,045 - INFO - 127.0.0.1 - - [20/Dec/2024 19:25:50] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:25:50,188 - INFO - Processed image with 1 faces detected in 0.07 seconds
+2024-12-20 19:25:50,188 - INFO - 127.0.0.1 - - [20/Dec/2024 19:25:50] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:25:50,438 - INFO - Processed image with 1 faces detected in 0.08 seconds
+2024-12-20 19:25:50,439 - INFO - 127.0.0.1 - - [20/Dec/2024 19:25:50] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:25:50,587 - INFO - Processed image with 1 faces detected in 0.07 seconds
+2024-12-20 19:25:50,588 - INFO - 127.0.0.1 - - [20/Dec/2024 19:25:50] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:25:50,841 - INFO - Processed image with 1 faces detected in 0.08 seconds
+2024-12-20 19:25:50,841 - INFO - 127.0.0.1 - - [20/Dec/2024 19:25:50] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:25:50,990 - INFO - Processed image with 1 faces detected in 0.07 seconds
+2024-12-20 19:25:50,990 - INFO - 127.0.0.1 - - [20/Dec/2024 19:25:50] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:25:51,245 - INFO - Processed image with 1 faces detected in 0.08 seconds
+2024-12-20 19:25:51,246 - INFO - 127.0.0.1 - - [20/Dec/2024 19:25:51] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:25:51,383 - INFO - Processed image with 1 faces detected in 0.08 seconds
+2024-12-20 19:25:51,383 - INFO - 127.0.0.1 - - [20/Dec/2024 19:25:51] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:25:51,638 - INFO - Processed image with 1 faces detected in 0.07 seconds
+2024-12-20 19:25:51,639 - INFO - 127.0.0.1 - - [20/Dec/2024 19:25:51] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:25:51,777 - INFO - Processed image with 1 faces detected in 0.07 seconds
+2024-12-20 19:25:51,778 - INFO - 127.0.0.1 - - [20/Dec/2024 19:25:51] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:25:52,025 - INFO - Processed image with 1 faces detected in 0.07 seconds
+2024-12-20 19:25:52,025 - INFO - 127.0.0.1 - - [20/Dec/2024 19:25:52] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:25:52,165 - INFO - Processed image with 1 faces detected in 0.07 seconds
+2024-12-20 19:25:52,166 - INFO - 127.0.0.1 - - [20/Dec/2024 19:25:52] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:25:52,408 - INFO - Processed image with 1 faces detected in 0.07 seconds
+2024-12-20 19:25:52,409 - INFO - 127.0.0.1 - - [20/Dec/2024 19:25:52] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:25:52,561 - INFO - Processed image with 1 faces detected in 0.07 seconds
+2024-12-20 19:25:52,562 - INFO - 127.0.0.1 - - [20/Dec/2024 19:25:52] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:25:52,796 - INFO - Processed image with 1 faces detected in 0.07 seconds
+2024-12-20 19:25:52,796 - INFO - 127.0.0.1 - - [20/Dec/2024 19:25:52] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:25:52,952 - INFO - Processed image with 1 faces detected in 0.07 seconds
+2024-12-20 19:25:52,952 - INFO - 127.0.0.1 - - [20/Dec/2024 19:25:52] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:25:53,188 - INFO - Processed image with 1 faces detected in 0.08 seconds
+2024-12-20 19:25:53,189 - INFO - 127.0.0.1 - - [20/Dec/2024 19:25:53] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:25:53,352 - INFO - Processed image with 1 faces detected in 0.07 seconds
+2024-12-20 19:25:53,352 - INFO - 127.0.0.1 - - [20/Dec/2024 19:25:53] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:25:53,587 - INFO - Processed image with 1 faces detected in 0.07 seconds
+2024-12-20 19:25:53,587 - INFO - 127.0.0.1 - - [20/Dec/2024 19:25:53] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:25:53,744 - INFO - Processed image with 1 faces detected in 0.07 seconds
+2024-12-20 19:25:53,744 - INFO - 127.0.0.1 - - [20/Dec/2024 19:25:53] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:25:53,987 - INFO - Processed image with 1 faces detected in 0.07 seconds
+2024-12-20 19:25:53,987 - INFO - 127.0.0.1 - - [20/Dec/2024 19:25:53] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:25:54,143 - INFO - Processed image with 1 faces detected in 0.07 seconds
+2024-12-20 19:25:54,144 - INFO - 127.0.0.1 - - [20/Dec/2024 19:25:54] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:25:54,389 - INFO - Processed image with 1 faces detected in 0.07 seconds
+2024-12-20 19:25:54,389 - INFO - 127.0.0.1 - - [20/Dec/2024 19:25:54] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:25:54,546 - INFO - Processed image with 1 faces detected in 0.07 seconds
+2024-12-20 19:25:54,547 - INFO - 127.0.0.1 - - [20/Dec/2024 19:25:54] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:25:54,779 - INFO - Processed image with 1 faces detected in 0.07 seconds
+2024-12-20 19:25:54,780 - INFO - 127.0.0.1 - - [20/Dec/2024 19:25:54] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:25:54,931 - INFO - Processed image with 1 faces detected in 0.07 seconds
+2024-12-20 19:25:54,931 - INFO - 127.0.0.1 - - [20/Dec/2024 19:25:54] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:25:55,181 - INFO - Processed image with 1 faces detected in 0.07 seconds
+2024-12-20 19:25:55,182 - INFO - 127.0.0.1 - - [20/Dec/2024 19:25:55] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:25:55,337 - INFO - Processed image with 1 faces detected in 0.07 seconds
+2024-12-20 19:25:55,337 - INFO - 127.0.0.1 - - [20/Dec/2024 19:25:55] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:25:55,580 - INFO - Processed image with 1 faces detected in 0.07 seconds
+2024-12-20 19:25:55,580 - INFO - 127.0.0.1 - - [20/Dec/2024 19:25:55] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:25:55,734 - INFO - Processed image with 1 faces detected in 0.07 seconds
+2024-12-20 19:25:55,735 - INFO - 127.0.0.1 - - [20/Dec/2024 19:25:55] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:25:55,981 - INFO - Processed image with 1 faces detected in 0.07 seconds
+2024-12-20 19:25:55,981 - INFO - 127.0.0.1 - - [20/Dec/2024 19:25:55] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:25:56,123 - INFO - Processed image with 1 faces detected in 0.07 seconds
+2024-12-20 19:25:56,124 - INFO - 127.0.0.1 - - [20/Dec/2024 19:25:56] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:25:56,382 - INFO - Processed image with 1 faces detected in 0.07 seconds
+2024-12-20 19:25:56,383 - INFO - 127.0.0.1 - - [20/Dec/2024 19:25:56] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:25:56,523 - INFO - Processed image with 1 faces detected in 0.07 seconds
+2024-12-20 19:25:56,523 - INFO - 127.0.0.1 - - [20/Dec/2024 19:25:56] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:25:56,789 - INFO - Processed image with 1 faces detected in 0.07 seconds
+2024-12-20 19:25:56,789 - INFO - 127.0.0.1 - - [20/Dec/2024 19:25:56] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:26:11,728 - INFO - Processed image with 1 faces detected in 0.09 seconds
+2024-12-20 19:26:11,728 - INFO - 127.0.0.1 - - [20/Dec/2024 19:26:11] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:26:12,671 - INFO - Processed image with 1 faces detected in 0.07 seconds
+2024-12-20 19:26:12,671 - INFO - 127.0.0.1 - - [20/Dec/2024 19:26:12] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:26:12,996 - INFO - Processed image with 1 faces detected in 0.07 seconds
+2024-12-20 19:26:12,997 - INFO - 127.0.0.1 - - [20/Dec/2024 19:26:12] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:26:13,392 - INFO - Processed image with 1 faces detected in 0.07 seconds
+2024-12-20 19:26:13,393 - INFO - 127.0.0.1 - - [20/Dec/2024 19:26:13] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:26:13,659 - INFO - Processed image with 1 faces detected in 0.07 seconds
+2024-12-20 19:26:13,659 - INFO - 127.0.0.1 - - [20/Dec/2024 19:26:13] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:26:14,171 - INFO - Processed image with 1 faces detected in 0.08 seconds
+2024-12-20 19:26:14,171 - INFO - 127.0.0.1 - - [20/Dec/2024 19:26:14] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:26:14,565 - INFO - Processed image with 1 faces detected in 0.07 seconds
+2024-12-20 19:26:14,566 - INFO - 127.0.0.1 - - [20/Dec/2024 19:26:14] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:26:14,831 - INFO - Processed image with 1 faces detected in 0.07 seconds
+2024-12-20 19:26:14,831 - INFO - 127.0.0.1 - - [20/Dec/2024 19:26:14] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:26:14,957 - INFO - Processed image with 1 faces detected in 0.07 seconds
+2024-12-20 19:26:14,958 - INFO - 127.0.0.1 - - [20/Dec/2024 19:26:14] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:26:15,231 - INFO - Processed image with 1 faces detected in 0.07 seconds
+2024-12-20 19:26:15,232 - INFO - 127.0.0.1 - - [20/Dec/2024 19:26:15] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:26:15,361 - INFO - Processed image with 1 faces detected in 0.08 seconds
+2024-12-20 19:26:15,362 - INFO - 127.0.0.1 - - [20/Dec/2024 19:26:15] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:26:15,627 - INFO - Processed image with 1 faces detected in 0.08 seconds
+2024-12-20 19:26:15,627 - INFO - 127.0.0.1 - - [20/Dec/2024 19:26:15] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:26:20,537 - INFO - Processed image with 1 faces detected in 0.07 seconds
+2024-12-20 19:26:20,537 - INFO - 127.0.0.1 - - [20/Dec/2024 19:26:20] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:26:20,933 - INFO - Processed image with 1 faces detected in 0.07 seconds
+2024-12-20 19:26:20,933 - INFO - 127.0.0.1 - - [20/Dec/2024 19:26:20] "POST /recognize-face HTTP/1.1" 200 -
+2024-12-20 19:27:44,232 - INFO - Processed image with 1 faces detected in 0.07 seconds
+2024-12-20 19:27:44,232 - INFO - 127.0.0.1 - - [20/Dec/2024 19:27:44] "POST /recognize-face HTTP/1.1" 200 -
